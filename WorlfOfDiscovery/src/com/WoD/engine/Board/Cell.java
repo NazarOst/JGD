@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.wod.engine;
+package com.WoD.engine.Board;
 
 import com.WoD.engine.Actors.Actor;
 import com.google.common.collect.ImmutableMap;

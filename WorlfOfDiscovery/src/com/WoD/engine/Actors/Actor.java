@@ -5,10 +5,44 @@
  */
 package com.WoD.engine.Actors;
 
+import com.WoD.engine.Board.Board;
+import com.WoD.engine.Board.Move;
+import java.util.List;
+
 /**
  *
  * @author Metior
  */
-public class Actor {
+public abstract class Actor {
+    private int health;
+    private int mana;
+    private int armor;
+    protected status actorStatus;
+    public enum status {RED, YELLOW, GREEN}
+    
+    Actor(int health, int mana, int armor, status actorStatus){
+        this.health = health;
+        this.mana = mana;
+        this.armor = armor;
+        this.actorStatus = actorStatus;
+    }
+    
+    public int getActorHealth(){
+        return health;
+    }
+    
+    public int getActorMana(){
+        return mana;
+    }
+    
+    public int getActorArmor(){
+        return armor;
+    }
+    
+    public status getActorStatus(){
+        return actorStatus;
+    }
+    
+    public abstract List<Move> calculateLegalMoves(final Board board);
     
 }

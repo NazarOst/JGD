@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Metior/Desktop/JGD/WorlfOfDiscovery/src/com/WoD/engine/Board/Board.java</file>
             <file>file:/C:/Users/Metior/Desktop/JGD/WorlfOfDiscovery/src/com/WoD/engine/Actors/Hero.java</file>
             <file>file:/C:/Users/Metior/Desktop/JGD/WorlfOfDiscovery/src/com/WoD/engine/Actors/Actor.java</file>
-            <file>file:/C:/Users/Metior/Desktop/JGD/WorlfOfDiscovery/src/com/WoD/engine/Cell.java</file>
+            <file>file:/C:/Users/Metior/Desktop/JGD/WorlfOfDiscovery/src/com/WoD/engine/Board/Move.java</file>
+            <file>file:/C:/Users/Metior/Desktop/JGD/WorlfOfDiscovery/src/com/WoD/engine/Board/Cell.java</file>
             <file>file:/C:/Users/Metior/Desktop/JGD/WorlfOfDiscovery/src/com/WoD/engine/Actors/Enemy.java</file>
         </group>
     </open-files>

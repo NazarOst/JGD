@@ -5,26 +5,23 @@
  */
 package com.WoD.engine.Actors;
 
+import com.WoD.engine.Board.Board;
+import com.WoD.engine.Board.Move;
+import java.util.List;
+
 /**
  *
  * @author Metior
  */
-public class Hero {
+public class Hero extends Actor {
     
-    private int health;
-    private int mana;
-    private int armor;
-    
-    public int getHeroHealth(){
-        return health;
+    Hero(int health, int mana, int armor, status actorStatus){
+        super(health, mana, armor, actorStatus);
     }
     
-    public int getHeroMana(){
-        return mana;
-    }
-    
-    public int getHeroArmor(){
-        return armor;
+    @Override
+    public List<Move> calculateLegalMoves(final Board board){
+        return null;
     }
     
 }
