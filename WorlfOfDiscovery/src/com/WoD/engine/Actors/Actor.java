@@ -17,10 +17,12 @@ public abstract class Actor {
     private int health;
     private int mana;
     private int armor;
+    protected int positionCoordinates;
+    protected int initialPosition;
     protected status actorStatus;
-    public enum status {RED, YELLOW, GREEN}
+    public enum status {RED, YELLOW, GREEN, NOT_ALIVE}
     
-    Actor(int health, int mana, int armor, status actorStatus){
+    Actor(int positionCoordinates , int health, int mana, int armor, status actorStatus){
         this.health = health;
         this.mana = mana;
         this.armor = armor;
@@ -28,21 +30,20 @@ public abstract class Actor {
     }
     
     public int getActorHealth(){
-        return health;
+        return this.health;
     }
     
     public int getActorMana(){
-        return mana;
+        return this.mana;
     }
     
     public int getActorArmor(){
-        return armor;
+        return this.armor;
     }
     
     public status getActorStatus(){
-        return actorStatus;
+        return this.actorStatus;
     }
     
-    public abstract List<Move> calculateLegalMoves(final Board board);
-    
+    public abstract List<Move> calculateLegalMoves(final Board board);    
 }

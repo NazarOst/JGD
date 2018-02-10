@@ -11,4 +11,7 @@ package com.WoD.engine.Board;
  */
 public class Board {
     
+    public Cell getCell(final int cellCoordinate){
+        return null;
+    }    
 }

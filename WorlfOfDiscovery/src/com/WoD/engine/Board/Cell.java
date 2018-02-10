@@ -26,8 +26,7 @@ public abstract class Cell {
         
         for(int i=0; i<100; i++){
             emptyCellMap.put(i, new EmptyCell(i));
-        }
-                
+        }                
         return ImmutableMap.copyOf(emptyCellMap);
     }
     
@@ -66,13 +65,11 @@ public abstract class Cell {
         OccupiedCell(int cellCoordinate, Actor actorOnCell){
             super(cellCoordinate);
             this.actorOnCell = actorOnCell;
-        }
-        
+        }        
         @Override
         public boolean isCellOccupied(){
             return true;
-        }
-        
+        }        
         @Override
         public Actor getActor(){
             return this.actorOnCell;
